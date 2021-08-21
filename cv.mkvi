@@ -1,80 +1,88 @@
+%% cv.mkvi
+%% Copyright 2021 Mikołaj Gradowski
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Mikołaj Gradowski.
+%
+% This work consists of the files env.mkvi and cv.mkvi,
+% and the derived file cv.pdf.
+
 \environment[env.mkvi]
 
+\define\me{Mikołaj~Gradowski}
+% w-dot kerning fix
+\define\email{hello@mgradow\hskip -0.12em .ski}
+\define\phone{(+48) 730-783-562}
+\define\github{mgradowski}
 
 \starttext
-    \os
+    \cvhead
 
-    \startalignment[top]
-        \startcolumns[n=2]
-            {\tfd \me}
-            \column
-            \startalignment[flushright]
-                \email\fa{envelope}\\
-                \phone\fa{phone}\\
-                \github\fa{github}\\
-            \stopalignment
-        \stopcolumns
-    \stopalignment
-
-    \textrule{\tfb \sc Experience}
-    \vskip 0.25em
-
-    \experiencesection[
-        STU ERGO Hestia SA,
-        Summer internship,
-        Jul 2021 -- Sep 2021,
-        Sopot, Poland
+    \cvsection{Experience}
+    \cventry[
+        name=STU ERGO Hestia SA,
+        description=Summer internship,
+        fromto=Jul 2021 -- Sep 2021,
+        where={Sopot, Poland}
     ]{
-        \item{Pierwszy {\italic arcyważny} obowiązek.}
+        \cventryitem{Pierwszy {\it arcyważny} obowiązek.}
+        \cventryitem{Drugi z bardzo ważnych obowiązków}
+        \cventryitem{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+    }
+    \cventry[
+        name=\quotation{Alternatywa} music club,
+        description=Sound engineer,
+        fromto=Nov 2018 -- Mar 2020,
+        where={Malbork, Poland}
+    ]{
+        \cventryitem{Drugi z bardzo ważnych obowiązków}
+        \cventryitem{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+    }
+    \cventry[
+        name=www.fabax.pl,
+        description=Website design and implementation,
+        fromto=Sep 2018,
+        where={Malbork, Poland}
+    ]{
+        \cventryitem{Pierwszy {\italic arcyważny} obowiązek.}
+        \cventryitem{Drugi z bardzo ważnych obowiązków}
+        \cventryitem{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+    }
+
+    \cvsection{Education}
+    \cventry[
+        name=Gdańsk University of Technology,
+        description={Data Engineering, B.Eng.},
+        fromto=Oct 2019 -- Jan 2023 \inrightmargin{\tfx \it (expected)},
+        where={Gdańsk, Poland}
+    ]{
+        \item{Pierwszy {\italic arcyważny} obowiązek. Jem fasole i buraki dlaczego jestem taki.}
         \item{Drugi z bardzo ważnych obowiązków}
         \item{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
     }
-
-    \experiencesection[
-        \quotation{Alternatywa} music club,
-        Sound engineer,
-        Nov 2018 -- Mar 2020,
-        Malbork, Poland
+    \cventry[
+        name=Henryk Sienkiewicz I\high{st} High School,
+        description=Mathematics-Physics-IT programme,
+        fromto=Sep 2016 – May 2019,
+        where={Malbork, Poland}
     ]{
-        \item{Pierwszy {\italic arcyważny} obowiązek.}
-        \item{Drugi z bardzo ważnych obowiązków}
-        \item{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+        \item{Gdańsk University of Technology scholarship contest laureate.}
+        \item{Sound engineer at school events.}
     }
 
-    \experiencesection[
-        www.fabax.pl,
-        Website design and implementation,
-        Sep 2018,
-        Malbork, Poland
-    ]{
-        \item{Pierwszy {\italic arcyważny} obowiązek.}
-        \item{Drugi z bardzo ważnych obowiązków}
-        \item{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
-    }
-
-    \vskip 0.5em
-    \textrule{\tfb \sc Education}
-    \vskip 0.25em
-
-    \experiencesection[
-        Gdańsk University of Technology,
-        B.Sc. in Data Engineering,
-        Oct 2019 -- Jan 2023 \inrightmargin{\tfx \it (expected)},
-        Gdańsk, Poland
-    ]{
-        \item{Pierwszy {\italic arcyważny} obowiązek.}
-        \item{Drugi z bardzo ważnych obowiązków}
-        \item{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
-    }
-
-    \experiencesection[
-        Henryk Sienkiewicz I\high{st} High School,
-        Mathematics-Physics-IT programme,
-        Sep 2016 – May 2019,
-        Malbork, Poland
-    ]{
-        \item{Gdańsk University of Technology scholarship contast laureate.}
-    }
+    \cvsection{Skills}
+    \ConTeXt/\LaTeX, SQL (Postgres, Oracle, Hive, SQLite, DuckDB), MongoDB, Python, PyData~stack, C, Julia, PyTorch
+    \cvsection{Projects}
+    \cvsection{Interests}
 
 
 \stoptext
