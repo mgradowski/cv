@@ -19,8 +19,6 @@ Author: Dave Gandy
 License: SIL Open Font License, version 1.1
 URL: http://www.fontawesome.io
 ```
-
- <small>
- This work is licensed under LPPL, see <a href="LICENSE">LICENSE</a> for details.
+### Copyright
+ This work is licensed under LPPL, see [the license](LICENSE) for details.
  Please respect the license.
- </small>
