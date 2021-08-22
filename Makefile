@@ -19,15 +19,17 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-all: cv.pdf
+all: site/cv.pdf
 
 .PHONY: watch
 
 watch:
 	while true; do make --silent all; sleep 2; done  
 
-cv.pdf: *.mkvi
-	context --purgeall --once --noconsole --nosynctex cv.mkvi
+# rationale behind cd: context only seems to support outputting to $CWD
+site/cv.pdf: *.mkvi
+	cd ./site;\
+	context --purgeall --once --noconsole --nosynctex ../cv.mkvi
 
 clean:
-	rm cv.pdf
+	rm site/cv.pdf
