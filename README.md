@@ -1,7 +1,7 @@
 ## Curriculum Vitæ
 This repository contains my up-to-date CV, made using ConTeXt. It is intended to serve as a reference for anyone wishing to write similar documents using ConTeXt.
 
-[[Link to the .pdf file]](https://raw.githubusercontent.com/mgradowski/cv/main/cv.pdf)
+[[Link to the .pdf file]](https://cv.mgradow.ski)
 
 ### Project structure
 The project source consists of two `.mkvi` files (indicating ConTeXt Mark VI).
