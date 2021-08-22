@@ -22,7 +22,12 @@
 % w-dot kerning fix
 \define\email{hello@mgradow\hskip -0.12em .ski}
 \define\phone{(+48) 730-783-562}
-\define\github{mgradowski}
+\define\web{mgradow.ski}
+
+% Trademarks etc.
+\define\Oracle{Oracle\registered}
+\define\Hive{Hive\trademark}
+\define\Hadoop{Hadoop\registered}
 
 \starttext
     \cvhead
@@ -34,9 +39,19 @@
         fromto=Jul 2021 -- Sep 2021,
         where={Sopot, Poland}
     ]{
-        \cventryitem{Pierwszy {\it arcyważny} obowiązek.}
-        \cventryitem{Drugi z bardzo ważnych obowiązków}
-        \cventryitem{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+        \cventryitem{
+            Developed and maintained reporting software used daily by regional managers.
+        }
+        \cventryitem{
+            Compiled ad-hoc reports, mainly using an \Oracle~Database data warehouse.
+        }
+        \cventryitem{
+            Briefly used a \Hadoop\ cluster running \Hive.
+        }
+        \cventryitem{
+            Implemented small improvements across my office, e.g. introduced Git,
+            started deploying Python programs in virtual environments.
+        }
     }
     \cventry[
         name=\quotation{Alternatywa} music club,
@@ -44,19 +59,15 @@
         fromto=Nov 2018 -- Mar 2020,
         where={Malbork, Poland}
     ]{
-        \cventryitem{Drugi z bardzo ważnych obowiązków}
-        \cventryitem{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+        \cventryitem{Mixed audio during live performances --- concerts, stand-ups, etc.}
+        \cventryitem{Set up and tore down sound and lightning equipment.}
     }
     \cventry[
         name=www.fabax.pl,
         description=Website design and implementation,
         fromto=Sep 2018,
         where={Malbork, Poland}
-    ]{
-        \cventryitem{Pierwszy {\italic arcyważny} obowiązek.}
-        \cventryitem{Drugi z bardzo ważnych obowiązków}
-        \cventryitem{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
-    }
+    ]{}
 
     \cvsection{Education}
     \cventry[
@@ -65,24 +76,69 @@
         fromto=Oct 2019 -- Jan 2023 \inrightmargin{\tfx \it (expected)},
         where={Gdańsk, Poland}
     ]{
-        \item{Pierwszy {\italic arcyważny} obowiązek. Jem fasole i buraki dlaczego jestem taki.}
-        \item{Drugi z bardzo ważnych obowiązków}
-        \item{Bez trzeciego obowiązku niebo zawaliłoby nam się na głowy.}
+        \cventryitem{Full-time undergraduate studies in English.}
+        \cventryitem{Lead by the {\it Faculty~of~Electronics,~Telecommunication~and~Informatics}.
+        The first four semesters also included classes at the {\it Faculty~of~Management~and~Economics}.}
     }
     \cventry[
-        name=Henryk Sienkiewicz I\high{st} High School,
+        name=\textnumero 1 Henryk Sienkiewicz High School,
         description=Mathematics-Physics-IT programme,
         fromto=Sep 2016 – May 2019,
         where={Malbork, Poland}
     ]{
-        \item{Gdańsk University of Technology scholarship contest laureate.}
-        \item{Sound engineer at school events.}
+        \cventryitem{Gdańsk University of Technology scholarship contest laureate.}
+        \cventryitem{Sound engineer at school events.}
     }
 
-    \cvsection{Skills}
-    \ConTeXt/\LaTeX, SQL (Postgres, Oracle, Hive, SQLite, DuckDB), MongoDB, Python, PyData~stack, C, Julia, PyTorch
-    \cvsection{Projects}
-    \cvsection{Interests}
+    \cvsection{Skills}{}
+    Python,
+    PyData~stack,
+    PyTorch,
+    SQL (Postgres, \Oracle, \Hive, SQLite, DuckDB),
+    MongoDB,
+    Julia,
+    \ConTeXt/\LaTeX,
+    C,
+    Haskell,
+    Docker [Compose],
+    GitLab~CI,
+    async~programming,
+    *nix operating systems,
+    Vim
 
+    \cvsection{Projects}
+    \cventry[
+        name=Optical tracking for billiards,
+        description=Computer vision,
+        fromto=2020--,
+        where=hobby project
+    ]{
+        \cventryitem{Aims to develop 3-dimensional optical tracking for statistical analysis of the sport.}
+        \cventryitem{Short video of an early prototype: https://youtu.be/fSLNEglZxrE}
+    }
+    \cventry[
+        name=Real-time fall detection,
+        description=Computer vision,
+        fromto=2021,
+        where=university project
+    ]{
+        \cventryitem{Uses a fully-convolutional neural network to detect fallen people at >30fps.}
+        \cventryitem{Short video presentation: https://youtu.be/xtDYDrC_Y38}
+        \cventryitem{Code: https://github.com/mgradowski/aiproject}
+    }
+
+    \cvsection{Interests}{}
+    typography,
+    electronic music production,
+    piano,
+    billiards,
+    road cycling,
+    cooking;
+    modern programming languages and tooling,
+    proof assistants,
+    operating systems,
+    computer algebra systems,
+    computer vision,
+    computer networks
 
 \stoptext

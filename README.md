@@ -1,5 +1,5 @@
 ## Curriculum Vitæ
-This repository contains my up-to-date CV, made using ConTeXt. It is intended to serve as a reference for anyone wishing to write documents using ConTeXt, as well as my future self.
+This repository contains my up-to-date CV, made using ConTeXt. It is intended to serve as a reference for anyone wishing to write similar documents using ConTeXt.
 
 [[Link to the .pdf file]](https://raw.githubusercontent.com/mgradowski/cv/main/cv.pdf)
 
@@ -19,7 +19,6 @@ Author: Dave Gandy
 License: SIL Open Font License, version 1.1
 URL: http://www.fontawesome.io
 ```
-
 
  <small>
  This work is licensed under LPPL, see <a href="LICENSE">LICENSE</a> for details.
