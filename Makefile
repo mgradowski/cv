@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-all: site/cv.pdf
+all: docs/cv.pdf
 
 .PHONY: watch
 
@@ -27,8 +27,8 @@ watch:
 	while true; do make --silent all; sleep 2; done  
 
 # rationale behind cd: context only seems to support outputting to $CWD
-site/cv.pdf: *.mkvi
-	cd ./site;\
+docs/cv.pdf: *.mkvi
+	cd ./docs;\
 	context --purgeall --once --noconsole --nosynctex ../cv.mkvi
 
 clean:
