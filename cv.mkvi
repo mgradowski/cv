@@ -19,7 +19,6 @@
 \environment[env.mkvi]
 
 \define\me{Mikołaj~Gradowski}
-% w-dot kerning fix
 \define\email{hello@mgradow.ski}
 \define\phone{+48-730-783-562}
 \define\web{mgradow.ski}
@@ -40,17 +39,15 @@
         fromto=Jul 2021 -- Jan 2022,
         where={Sopot, Poland}]{
         \cventryitem{
-            Developed and maintained reporting software used daily by regional managers.
+            Developed and maintained data pipelines, reporting software, web scrapers, internal Python libraries.
         }
         \cventryitem{
-            Compiled ad-hoc reports, mainly using an \Oracle~Database data warehouse.
+            Automated various business processes.
         }
         \cventryitem{
-            Briefly used a \Hadoop\ cluster running \Hive.
-        }
-        \cventryitem{
-            Implemented small improvements across my office, e.g. introduced Git,
-            started deploying Python programs in virtual environments.
+            Implemented improvements across my office, e.g. version control,
+            proper distribution of Python programs through an internal package repository,
+            migrated from storing/exchanging data in MS Excel files to Apache Parquet.
         }
     }
     \cventry[
@@ -77,33 +74,26 @@
         \cventryitem{Lead by the {\it Faculty~of~Electronics,~Telecommunication~and~Informatics}.
         The first four semesters also included classes at the {\it Faculty~of~Management~and~Economics}.}
     }
-    \cventry[
-        name=\textnumero 1 Henryk Sienkiewicz High School,
-        description=Mathematics-Physics-IT programme,
-        fromto=Sep 2016 – May 2019,
-        where={Malbork, Poland}]{
-        \cventryitem{Gdańsk University of Technology scholarship contest laureate.}
-        \cventryitem{Sound engineer at school events.}
-    }
 
     \cvsection{Skills}{}
-    async~programming,
-    *nix operating systems,
-    C,
-    cloud~computing,
-    Docker [Compose],
-    Django,
-    Git,
-    GitLab~CI,
-    Haskell,
-    Julia,
-    MongoDB,
-    PyData~stack,
+    SQL (Postgres, \Oracle, \Hive, SQLite, DuckDB, ClickHouse),
     Python,
-    PyTorch,
-    Scikit-learn,
-    SQL (Postgres, \Oracle, \Hive, SQLite, DuckDB),
+    PyData~stack (Pandas, NumPy, Scikit-learn, &c.),
+    containerization (Docker, Podman),
+    workflow~management~(Airflow),
+    DBT,
+    *nix~system~administration,
+    concurrent~and~async~programming,
+    cloud~computing,
+    computer~networking,
+    agile~practices,
+    version~control~Git,
+    GitLab~CI,
+    low-level~programming (C, Rust),
+    Redis,
+    MongoDB,
     Vim,
+    Neo4j,
     \ConTeXt/\LaTeX
 
     \cvsection{Projects}
