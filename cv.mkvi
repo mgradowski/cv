@@ -22,7 +22,7 @@
 \define\email{hello@mgradow.ski}
 \define\phone{+48-730-783-562}
 \define\web{mgradow.ski}
-\define\webcv{http://cv.mgradow.ski}
+\define\webcv{https://cv.mgradow.ski}
 
 % Trademarks etc.
 \define\Oracle{Oracle\registered}
@@ -35,19 +35,23 @@
     \cvsection{Experience}
     \cventry[
         name=STU ERGO Hestia SA,
-        description=Internship,
-        fromto=Jul 2021 -- Jan 2022,
+        description=Business Analyst Intern,
+        fromto=Jul 2021 --,
         where={Sopot, Poland}]{
         \cventryitem{
-            Developed and maintained data pipelines, reporting software, web scrapers, internal Python libraries.
+            Developed and maintained data pipelines, reporting software, web scrapers, internal Python libraries and tools.
         }
         \cventryitem{
-            Automated various business processes.
+            Did light data~science/statistics/machine~learning work.
         }
         \cventryitem{
-            Implemented improvements across my office, e.g. version control,
-            proper distribution of Python programs through an internal package repository,
-            migrated from storing/exchanging data in MS Excel files to Apache Parquet.
+            Automated business processes.
+        }
+        \cventryitem{
+	    Implemented improvements across my office, e.g.
+	    version control,
+            internal repository for Python packages,
+            Apache Parquet in place of MS Excel as data format.
         }
     }
     \cventry[
@@ -55,8 +59,7 @@
         description=Sound engineer,
         fromto=Nov 2018 -- Mar 2020,
         where={Malbork, Poland}]{
-        \cventryitem{Mixed audio during live performances --- concerts, stand-ups, etc.}
-        \cventryitem{Set up and tore down sound and lighting equipment.}
+        \cventryitem{Sound production during live performances --- concerts, stand-ups, etc.}
     }
     \cventry[
         name={\goto{www.fabax.pl}[\makeurl{https://www.fabax.pl}]},
@@ -70,30 +73,24 @@
         description={Data Engineering, B.Eng.},
         fromto=Oct 2019 -- Jan 2023 \inrightmargin{\tfx \it (expected)},
         where={Gdańsk, Poland}]{
-        \cventryitem{Full-time undergraduate studies in English.}
-        \cventryitem{Lead by the {\it Faculty~of~Electronics,~Telecommunication~and~Informatics}.
-        The first four semesters also included classes at the {\it Faculty~of~Management~and~Economics}.}
+        \cventryitem{Undergraduate degree programme in English.}
     }
 
     \cvsection{Skills}{}
-    SQL (Postgres, \Oracle, \Hive, SQLite, DuckDB, ClickHouse),
     Python,
+    SQL databases (Postgres, \Oracle, \Hive, SQLite, DuckDB, ClickHouse),
+    NoSQL databases (Redis, MongoDB, Vim, Neo4j),
     PyData~stack (Pandas, NumPy, Scikit-learn, &c.),
+    version~control~(Git),
     containerization (Docker, Podman),
-    workflow~management~(Airflow),
-    DBT,
+    GitLab~CI,
+    workflow~management~(Dagster, Airflow, DBT),
+    low-level~programming (C, Rust),
+    agile~practices,
     *nix~system~administration,
     concurrent~and~async~programming,
     cloud~computing,
     computer~networking,
-    agile~practices,
-    version~control~Git,
-    GitLab~CI,
-    low-level~programming (C, Rust),
-    Redis,
-    MongoDB,
-    Vim,
-    Neo4j,
     \ConTeXt/\LaTeX
 
     \cvsection{Projects}
@@ -116,17 +113,16 @@
     }
 
     \cvsection{Interests}{}
+    road cycling,
+    piano,
     billiards,
     cooking,
-    electronic music production,
-    piano,
-    road cycling,
-    typography;
+    modern programming languages and tooling,
+    proof assistants and type systems
+    operating systems
     computer algebra systems,
     computer networks,
     computer vision,
-    machine learning,
-    modern programming languages and tooling,
-    operating systems,
-    proof assistants and type systems
+    typography,
+    electronic music production
 \stoptext

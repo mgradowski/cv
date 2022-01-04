@@ -32,4 +32,4 @@ docs/cv.pdf: *.mkvi
 	context --purgeall --once --noconsole --nosynctex ../cv.mkvi
 
 clean:
-	rm site/cv.pdf
+	rm docs/cv.pdf
